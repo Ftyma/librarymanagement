@@ -1,0 +1,36 @@
+<div class="modal-dialog" data-target="#modals">
+
+</div>
+<form class="form-group">
+    <div class="modal-body">
+        <mat-label for="authorFormControl">
+        
+            <form [formGroup]="addAuthorForm">
+                <div class="form-group mb-2">
+                    <input type="text" class="form-control" placeholder="Author Name"
+                        id="addAuthorFormControl" formControlName="name">
+                </div>
+            
+                <div class="form-group mb-2">
+                    <input type="text" class="form-control" placeholder="Biography"
+                        id="addAuthorFormControl" formControlName="biography">
+                </div>
+            
+                <div class="form-group mb-2">
+                    <input type="text" class="form-control" placeholder="Author image link"
+                        id="addAuthorFormControl" formControlName="imgUrl">
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="submit" (click)="onClickAddNewAuthor()"
+                        class="btn btn-primary">Add</button>
+                    <button type="close" (click)="close()"
+                        class="btn btn-danger">Close</button>
+                        
+                    
+                </div>
+            </form>
+        </mat-label>
+        
+    </div>
+    
+</form>
